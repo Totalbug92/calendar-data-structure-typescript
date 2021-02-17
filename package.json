@@ -1,19 +1,41 @@
 {
-  "name": "calendar-data-structure-typescript",
+  "name": "@totalbug/calendar-data-structure-typescript",
   "version": "1.0.0",
   "description": "Calendar data structure with modern language support",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "/lib/index.js",
+  "module": "/lib/index.js",
   "scripts": {
-    "tsc": "tsc -p tsconfig.json"
+    "tsc": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run tsc",
+    "tslint": "tslint -p tsconfig.json",
+    "tslint-fix": "tslint --fix -p tsconfig.json"
   },
   "keywords": [],
   "author": "@Totalbug92",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "typescript": "^4.1.5"
   },
   "files": [
     "lib/"
-  ]
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@types/intl": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Totalbug92/calendar-data-structure-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Totalbug92/calendar-data-structure-typescript/issues"
+  },
+  "homepage": "https://github.com/Totalbug92/calendar-data-structure-typescript#readme"
 }
